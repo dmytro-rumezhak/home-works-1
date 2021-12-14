@@ -10,6 +10,7 @@
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --black-color: #000;
   --white-color: #fff;
+  --icon-color: #afb1b8;
 }
 
 h1,
@@ -31,6 +32,11 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 body {
@@ -68,7 +74,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  outline: 1px solid red;
   color: var(--accent-color);
 }
 .logo-dark {
@@ -195,15 +200,50 @@ body {
 .activity-item:not(:last-child) {
   margin-right: 30px;
 }
-.activity-item img {
+
+.team-social-list {
+  display: flex;
+}
+.team-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social-item > .team-social-link {
+  height: 100%;
+  padding: 12px;
   display: block;
+  border-radius: 50%;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+
+.team-social-link:hover,
+.team-social-link:focus,
+.team-social-link:hover .social-icon,
+.team-social-link:focus .social-icon {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 
 /* Стилізація Наша команда */
+.team-section {
+  background-color: var(--background-select-color);
+}
+
 .team-list {
   display: flex;
 }
 .team-item {
+  background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -213,23 +253,61 @@ body {
   margin-right: 30px;
 }
 
-.team-item img {
-  display: block;
-}
-
 .team-item-info {
   padding: 30px 32px;
   text-align: center;
 }
 .team-item-title {
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
   color: var(--body-title-color);
 }
 .team-item-desc {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Стилізація Постоянные клиенты */
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  height: 100%;
+  padding: 16px 32px;
+  display: block;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.clients-link:hover .clients-logo,
+.clients-link:focus .clients-logo,
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.clients-logo {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
 }
 
 /* Стилізація footer */
 .logo-lite {
+  color: var(--white-color);
 }
