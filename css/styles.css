@@ -1,0 +1,106 @@
+:root {
+  --background-color: #fff;
+  --body-title-color: #212121;
+  --body-text-color: #757575;
+  --accent-color: #2196f3;
+  --hero-title-color: #fff;
+  --btn-text-color: #fff;
+  --background-select-color: #f5f4fa;
+  --footer-backgroung-color: #2f303a;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--body-text-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Стилізація header */
+.logo {
+}
+.logo-dark {
+}
+.nav-list {
+}
+.nav-item {
+}
+.nav-link {
+}
+.contact-list {
+}
+.contakt-item {
+}
+.contakt-link {
+}
+
+/* Стилізація hero */
+.section {
+}
+.hero-title {
+}
+.btn {
+}
+
+/* Стилізація Переваги */
+.advantages-list {
+}
+.advantages-item {
+}
+.advantages-title {
+}
+.advantages-desc {
+}
+
+/* Стилізація Чем мы занимаемся */
+.activity-title {
+}
+.activity-list {
+}
+.activity-item {
+}
+
+/* Стилізація Наша команда */
+.team-title {
+}
+.team-list {
+}
+.team-item {
+}
+.team-item-title {
+}
+.team-item-desc {
+}
+
+/* Стилізація footer */
+.logo-lite {
+}
