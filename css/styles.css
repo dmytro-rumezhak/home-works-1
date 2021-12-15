@@ -11,6 +11,7 @@
   --black-color: #000;
   --white-color: #fff;
   --icon-color: #afb1b8;
+  --bcg-social-icon-footer-color: rgba(255, 255, 255, 0.1);
 }
 
 h1,
@@ -75,6 +76,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+
+  outline: 1px dashed red;
 }
 .logo-dark {
   color: var(--black-color);
@@ -132,7 +135,8 @@ body {
 }
 
 .hero-container {
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-bcg.jpg');
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-bcg.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -190,7 +194,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} 
+}
 
 .advantages-list {
   display: flex;
@@ -354,6 +358,56 @@ body {
   padding: 60px 0;
   background-color: var(--footer-backgroung-color);
 }
+
+.footer-container {
+  display: inline-flex;
+}
+.footer-address {
+  margin-right: 70px;
+}
+
 .logo-lite {
   color: var(--white-color);
+}
+
+.footer-address-links {
+  margin-top: 20px;
+  font-style: normal;
+  outline: 1px dashed red;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-maps {
+  color: var(--white-color);
+}
+
+.address-contact {
+  color: var(--footer-link-color);
+}
+
+.address-contact:hover,
+.address-contact:focus,
+.address-maps:hover,
+.address-maps:focus {
+  color: var(--accent-color);
+}
+
+.social-title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.social-footer {
+  fill: var(--white-color);
+}
+
+.footer-social-link {
+  background-color: var(--bcg-social-icon-footer-color);
 }
