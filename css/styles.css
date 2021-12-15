@@ -76,8 +76,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-
-  outline: 1px dashed red;
 }
 .logo-dark {
   color: var(--black-color);
@@ -359,9 +357,6 @@ body {
   background-color: var(--footer-backgroung-color);
 }
 
-.footer-container {
-  display: inline-flex;
-}
 .footer-address {
   margin-right: 70px;
 }
@@ -373,7 +368,6 @@ body {
 .footer-address-links {
   margin-top: 20px;
   font-style: normal;
-  outline: 1px dashed red;
 }
 
 .address-item:not(:last-child) {
@@ -410,4 +404,8 @@ body {
 
 .footer-social-link {
   background-color: var(--bcg-social-icon-footer-color);
+}
+
+.footer > .container {
+  display: flex;
 }
